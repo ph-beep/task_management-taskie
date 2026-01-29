@@ -1,7 +1,7 @@
 import './index.css'
 import App from './App.jsx'
 import { StrictMode } from 'react'
-import TaskPage from './pages/taskPage.jsx'
+import TaskPage from './pages/TaskPage.jsx'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
