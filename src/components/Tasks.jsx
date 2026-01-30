@@ -16,7 +16,7 @@ function Tasks ({tasks, onTaskClick, onDeleteTask}) {
                 <li key={task.id} className="bg-slate-800 p-4 rounded-md flex gap-2 items-center justify-between">
                     <button onClick={() => onTaskClick(task.id)} 
                     className={`text-xl text-left text-slate-100 w-full font-bold p-2 rounded-md 
-                    ${task.completed && "line-through text-slate-400"}`}>
+                    ${task.completed && "line-through text-slate-400"}`}> {task.completed ? "✓ " : ""}
                         {task.title}
                     </button>
                     <button onClick={() => handleTaskClick(task)} className="text-slate-300 p-2 rounded-md">
